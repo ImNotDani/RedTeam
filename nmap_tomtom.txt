@@ -1,0 +1,130 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2024-11-22 13:58 CET
+Nmap scan report for tomtom.com (98.64.11.144)
+Host is up (0.025s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      Microsoft-Azure-Application-Gateway/v2
+|_http-server-header: Microsoft-Azure-Application-Gateway/v2
+| fingerprint-strings: 
+|   FourOhFourRequest, GetRequest, HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     Server: Microsoft-Azure-Application-Gateway/v2
+|     Date: Fri, 22 Nov 2024 12:59:41 GMT
+|     Content-Type: text/html
+|     Content-Length: 179
+|     Connection: close
+|     <html>
+|     <head><title>404 Not Found</title></head>
+|     <body>
+|     <center><h1>404 Not Found</h1></center>
+|     <hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+|     </body>
+|     </html>
+|   RTSPRequest: 
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     <hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+|     </body>
+|     </html>
+|   X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     Server: Microsoft-Azure-Application-Gateway/v2
+|     Date: Fri, 22 Nov 2024 12:59:41 GMT
+|     Content-Type: text/html
+|     Content-Length: 183
+|     Connection: close
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     <hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+|     </body>
+|_    </html>
+|_http-title: Did not follow redirect to https://www.tomtom.com/
+443/tcp open  ssl/https Microsoft-Azure-Application-Gateway/v2
+|_http-server-header: Microsoft-Azure-Application-Gateway/v2
+| tls-nextprotoneg: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+|_http-title: Did not follow redirect to https://www.tomtom.com/
+| ssl-cert: Subject: commonName=url-redirector-prod.tomtomgroup.com/organizationName=TomTom International B.V./stateOrProvinceName=Noord-Holland/countryName=NL
+| Subject Alternative Name: DNS:tomtom.fi, DNS:tomtom.nl, DNS:openlr.org, DNS:tomtom.com, DNS:ttcode.com, DNS:tomtommaps.com, DNS:www.ttcode.com, DNS:beat.tomtom.com, DNS:tomtomgroup.com, DNS:tomtomplaces.com, DNS:engage.tomtom.com, DNS:groups.tomtom.com, DNS:intouch.tomtom.com, DNS:it.tomtomgroup.com, DNS:sd.tomtomgroup.com, DNS:thebeat.tomtom.com, DNS:devforum.tomtom.com, DNS:edp.tomtomgroup.com, DNS:hrsd.tomtomgroup.com, DNS:itsd.tomtomgroup.com, DNS:office365.tomtom.com, DNS:onboarder.tomtom.com, DNS:orbisps.tomtomgroup.com, DNS:feedback.tomtomgroup.com, DNS:security.tomtomgroup.com, DNS:itsupport.tomtomgroup.com, DNS:url-redirector-prod.tomtomgroup.com
+| Not valid before: 2024-09-20T10:13:54
+|_Not valid after:  2025-10-15T10:12:54
+| fingerprint-strings: 
+|   FourOhFourRequest, GetRequest, HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     Server: Microsoft-Azure-Application-Gateway/v2
+|     Date: Fri, 22 Nov 2024 12:59:47 GMT
+|     Content-Type: text/html
+|     Content-Length: 179
+|     Connection: close
+|     <html>
+|     <head><title>404 Not Found</title></head>
+|     <body>
+|     <center><h1>404 Not Found</h1></center>
+|     <hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+|     </body>
+|_    </html>
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.93%I=7%D=11/22%Time=6740803D%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,163,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20Microsoft-A
+SF:zure-Application-Gateway/v2\r\nDate:\x20Fri,\x2022\x20Nov\x202024\x2012
+SF::59:41\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20179\r
+SF:\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>404\x20Not\x20Foun
+SF:d</title></head>\r\n<body>\r\n<center><h1>404\x20Not\x20Found</h1></cen
+SF:ter>\r\n<hr><center>Microsoft-Azure-Application-Gateway/v2</center>\r\n
+SF:</body>\r\n</html>\r\n")%r(HTTPOptions,163,"HTTP/1\.1\x20404\x20Not\x20
+SF:Found\r\nServer:\x20Microsoft-Azure-Application-Gateway/v2\r\nDate:\x20
+SF:Fri,\x2022\x20Nov\x202024\x2012:59:41\x20GMT\r\nContent-Type:\x20text/h
+SF:tml\r\nContent-Length:\x20179\r\nConnection:\x20close\r\n\r\n<html>\r\n
+SF:<head><title>404\x20Not\x20Found</title></head>\r\n<body>\r\n<center><h
+SF:1>404\x20Not\x20Found</h1></center>\r\n<hr><center>Microsoft-Azure-Appl
+SF:ication-Gateway/v2</center>\r\n</body>\r\n</html>\r\n")%r(RTSPRequest,B
+SF:7,"<html>\r\n<head><title>400\x20Bad\x20Request</title></head>\r\n<body
+SF:>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n<hr><center>Mic
+SF:rosoft-Azure-Application-Gateway/v2</center>\r\n</body>\r\n</html>\r\n"
+SF:)%r(X11Probe,169,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20Micr
+SF:osoft-Azure-Application-Gateway/v2\r\nDate:\x20Fri,\x2022\x20Nov\x20202
+SF:4\x2012:59:41\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x
+SF:20183\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\
+SF:x20Request</title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Reques
+SF:t</h1></center>\r\n<hr><center>Microsoft-Azure-Application-Gateway/v2</
+SF:center>\r\n</body>\r\n</html>\r\n")%r(FourOhFourRequest,163,"HTTP/1\.1\
+SF:x20404\x20Not\x20Found\r\nServer:\x20Microsoft-Azure-Application-Gatewa
+SF:y/v2\r\nDate:\x20Fri,\x2022\x20Nov\x202024\x2012:59:41\x20GMT\r\nConten
+SF:t-Type:\x20text/html\r\nContent-Length:\x20179\r\nConnection:\x20close\
+SF:r\n\r\n<html>\r\n<head><title>404\x20Not\x20Found</title></head>\r\n<bo
+SF:dy>\r\n<center><h1>404\x20Not\x20Found</h1></center>\r\n<hr><center>Mic
+SF:rosoft-Azure-Application-Gateway/v2</center>\r\n</body>\r\n</html>\r\n"
+SF:);
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.93%T=SSL%I=7%D=11/22%Time=67408043%P=x86_64-pc-linux-gn
+SF:u%r(GetRequest,163,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20Micr
+SF:osoft-Azure-Application-Gateway/v2\r\nDate:\x20Fri,\x2022\x20Nov\x20202
+SF:4\x2012:59:47\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x
+SF:20179\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>404\x20Not\
+SF:x20Found</title></head>\r\n<body>\r\n<center><h1>404\x20Not\x20Found</h
+SF:1></center>\r\n<hr><center>Microsoft-Azure-Application-Gateway/v2</cent
+SF:er>\r\n</body>\r\n</html>\r\n")%r(HTTPOptions,163,"HTTP/1\.1\x20404\x20
+SF:Not\x20Found\r\nServer:\x20Microsoft-Azure-Application-Gateway/v2\r\nDa
+SF:te:\x20Fri,\x2022\x20Nov\x202024\x2012:59:47\x20GMT\r\nContent-Type:\x2
+SF:0text/html\r\nContent-Length:\x20179\r\nConnection:\x20close\r\n\r\n<ht
+SF:ml>\r\n<head><title>404\x20Not\x20Found</title></head>\r\n<body>\r\n<ce
+SF:nter><h1>404\x20Not\x20Found</h1></center>\r\n<hr><center>Microsoft-Azu
+SF:re-Application-Gateway/v2</center>\r\n</body>\r\n</html>\r\n")%r(FourOh
+SF:FourRequest,163,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20Microso
+SF:ft-Azure-Application-Gateway/v2\r\nDate:\x20Fri,\x2022\x20Nov\x202024\x
+SF:2012:59:47\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x201
+SF:79\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>404\x20Not\x20
+SF:Found</title></head>\r\n<body>\r\n<center><h1>404\x20Not\x20Found</h1><
+SF:/center>\r\n<hr><center>Microsoft-Azure-Application-Gateway/v2</center>
+SF:\r\n</body>\r\n</html>\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 85.05 seconds
